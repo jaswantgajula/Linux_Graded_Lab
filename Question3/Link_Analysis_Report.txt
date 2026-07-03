@@ -1,0 +1,122 @@
+LINK ANALYSIS REPORT
+
+Name: Jaswant
+Date: 03 July 2026
+
+============================================================
+1. Original File Creation
+============================================================
+
+Command:
+echo "Linux Lab Assignment" > original.txt
+
+Output:
+original.txt created successfully.
+
+Observation:
+This command created a new text file named original.txt.
+The file contains the text "Linux Lab Assignment".
+This file was used for creating hard and symbolic links.
+
+============================================================
+2. Hard Link Creation
+============================================================
+
+Command:
+ln original.txt hardlink.txt
+
+Output:
+hardlink.txt created successfully.
+
+Observation:
+This command created a hard link for the original file.
+The hard link points to the same data as the original file.
+Both files share the same inode number.
+
+============================================================
+3. Symbolic Link Creation
+============================================================
+
+Command:
+ln -s original.txt softlink.txt
+
+Output:
+softlink.txt -> original.txt
+
+Observation:
+This command created a symbolic link to the original file.
+A symbolic link stores the path of the original file.
+It acts like a shortcut to the original file.
+
+============================================================
+4. Inode Information
+============================================================
+
+Command:
+ls -li
+
+Output:
+58853670 hardlink.txt
+58853670 original.txt
+58854043 softlink.txt
+
+Observation:
+The hard link and original file have the same inode number.
+The symbolic link has a different inode number.
+This shows that hard links share the same file data while symbolic links do not.
+
+============================================================
+5. Metadata Information
+============================================================
+
+Command:
+stat original.txt
+
+Output:
+File Name : original.txt
+Inode : 58853670
+Owner : bunny
+Group : staff
+Size : 21 bytes
+
+Observation:
+The stat command displays detailed information about the file.
+It shows the owner, permissions, size, timestamps, and inode number.
+This information helps understand the file's properties.
+
+============================================================
+6. Effect of Deleting the Original File
+============================================================
+
+Command:
+rm original.txt
+
+Output:
+original.txt deleted successfully.
+
+Observation:
+The original file was removed from the directory.
+The hard link continued to work because it still points to the same inode.
+The symbolic link became broken because its target file no longer exists.
+
+============================================================
+7. Hard Link vs Symbolic Link
+============================================================
+
+Hard Link
+- Shares the same inode as the original file.
+- Continues to work even if the original file is deleted.
+- Points directly to the file data.
+
+Symbolic Link
+- Has a different inode.
+- Stops working when the original file is deleted.
+- Stores only the path of the original file.
+
+============================================================
+8. Conclusion
+============================================================
+
+The experiment showed the difference between hard links and symbolic links.
+Hard links remain usable after deleting the original file because they share the same inode.
+Symbolic links become invalid after the original file is deleted because they only store its path.

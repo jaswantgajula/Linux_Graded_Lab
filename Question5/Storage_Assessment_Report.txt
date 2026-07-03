@@ -1,0 +1,87 @@
+STORAGE ASSESSMENT REPORT
+
+Name: Jaswant Gajula
+Date: 03 July 2026
+
+============================================================
+1. Available Storage Devices
+============================================================
+
+Command:
+diskutil list
+
+Output:
+Internal Disk : disk0 (500.3 GB)
+APFS Container : disk3
+Disk Image : disk4
+
+Observation:
+The diskutil list command displays all storage devices connected to the system.
+It shows the internal disk, APFS containers, and mounted disk images.
+This information helps identify the available storage devices.
+
+============================================================
+2. Mounted File Systems
+============================================================
+
+Command:
+df -h
+
+Output:
+Main File System : /dev/disk3s1s1
+Mounted on : /
+Available Space : 117 GiB
+
+Observation:
+The df -h command displays mounted file systems and available storage.
+It presents disk usage in a human-readable format.
+The output shows sufficient free space on the main file system.
+
+============================================================
+3. Disk Usage Statistics
+============================================================
+
+Command:
+du -sh .
+
+Output:
+0B .
+
+Observation:
+The du -sh command displays the size of the current directory.
+The Question5 folder is currently empty except for files created during the assignment.
+The output shows that the directory is using very little storage.
+
+============================================================
+4. Inode Utilization
+============================================================
+
+Command:
+df -i
+
+Output:
+Main File System Inode Usage : 0%
+
+Observation:
+The df -i command displays inode usage for the file systems.
+The output shows that inode utilization is very low.
+This indicates that there are plenty of inodes available for creating new files.
+
+============================================================
+5. Storage Health Observation
+============================================================
+
+Observation:
+The storage devices are properly detected by the operating system.
+There is sufficient free disk space and inode availability.
+The storage appears to be healthy and ready for normal use.
+
+============================================================
+6. Recommendations
+============================================================
+
+1. Regularly remove unnecessary files to free up storage space.
+2. Monitor disk usage periodically to avoid low storage conditions.
+3. Delete old log files and temporary files when they are no longer required.
+4. Keep regular backups of important project files.
+5. Monitor storage health regularly to maintain good system performance.

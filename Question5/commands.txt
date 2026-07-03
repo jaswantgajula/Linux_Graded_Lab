@@ -1,0 +1,19 @@
+Question 5 - Storage Health Assessment and Documentation
+
+Commands Executed
+
+pwd
+
+lsblk (Not available on macOS)
+
+diskutil list
+
+df -h
+
+du -sh .
+
+df -i
+
+mount
+
+vi Storage_Assessment_Report.txt

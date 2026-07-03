@@ -1,0 +1,98 @@
+ENVIRONMENT REPORT
+
+Name: Jaswant Gajula
+Date: 03 July 2026
+
+============================================================
+
+1. Username
+   ============================================================
+
+Command:
+whoami
+
+Output:
+bunny
+
+Observation:
+This command displays the username of the currently logged-in user.
+It helps verify which account is currently using the system.
+The output shows that my current username is bunny.
+
+============================================================
+2. User Groups
+==============
+
+Command:
+groups
+
+Output:
+staff everyone localaccounts _appserverusr admin _appserveradm com.apple.sharepoint.group.1 _appstore _lpadmin _lpoperator _developer _analyticsusers com.apple.access_ftp com.apple.access_screensharing com.apple.access_ssh com.apple.access_remote_ae
+
+Observation:
+This command displays all the groups associated with my user account.
+These groups determine the permissions and access available to my account.
+The output shows that my account belongs to multiple system and administrator groups.
+
+============================================================
+3. Current Shell
+================
+
+Command:
+echo $SHELL
+
+Output:
+/bin/zsh
+
+Observation:
+This command displays the shell currently being used.
+A shell accepts user commands and communicates with the operating system.
+The output confirms that my system is using the zsh shell.
+
+============================================================
+4. Current Working Directory
+============================
+
+Command:
+pwd
+
+Output:
+/Users/bunny/Desktop/Linux_Graded_Lab/Question1
+
+Observation:
+This command prints the current working directory.
+It helps confirm the location where I am executing commands.
+The output shows that I am working inside the Question1 folder.
+
+============================================================
+5. List of Files and Directories
+================================
+
+Command:
+ls -la
+
+Output:
+total 0
+drwxr-xr-x  3 bunny  staff   96  3 Jul 10:03 .
+drwxr-xr-x  7 bunny  staff  224  3 Jul 10:02 ..
+drwxr-xr-x  2 bunny  staff   64  3 Jul 10:03 screenshots
+
+Observation:
+This command lists all files and directories in the current folder.
+It also displays permissions, owner, size, and modification date.
+The output confirms that the screenshots folder is present in the Question1 directory.
+
+============================================================
+6. Network Connectivity Verification
+====================================
+
+Command:
+ping -c 4 google.com
+
+Output:
+4 packets transmitted, 4 packets received, 0.0% packet loss
+
+Observation:
+This command checks the network connection by sending four packets to Google's server.
+All four packets were received successfully with no packet loss.
+The output confirms that the internet connection is working properly.

@@ -1,0 +1,27 @@
+Question 2 - Secure Project Workspace
+
+Commands Executed
+
+pwd
+
+mkdir -p SecureProject/{Documents,SourceCode,Backup}
+
+ls -R
+
+touch SecureProject/Documents/project_plan.txt
+
+touch SecureProject/SourceCode/main.c
+
+touch SecureProject/Backup/backup.txt
+
+find SecureProject
+
+ls -l SecureProject
+
+chmod -R 750 SecureProject
+
+ls -l SecureProject
+
+ls -ld SecureProject
+
+umask

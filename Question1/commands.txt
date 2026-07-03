@@ -1,0 +1,12 @@
+Question 1 - Linux Environment Verification
+
+Commands Executed:
+
+pwd
+whoami
+groups
+echo $SHELL
+pwd
+ls -la
+ping -c 4 google.com
+cat Environment_Report.txt

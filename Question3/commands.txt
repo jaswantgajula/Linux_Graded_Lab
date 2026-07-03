@@ -1,0 +1,29 @@
+Question 3 - File System and Link Analysis
+
+Commands Executed
+
+pwd
+
+echo "Linux Lab Assignment" > original.txt
+
+cat original.txt
+
+ln original.txt hardlink.txt
+
+ln -s original.txt softlink.txt
+
+ls
+
+ls -l
+
+ls -li
+
+stat original.txt
+
+rm original.txt
+
+ls -l
+
+cat hardlink.txt
+
+cat softlink.txt

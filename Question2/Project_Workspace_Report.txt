@@ -1,0 +1,97 @@
+PROJECT WORKSPACE REPORT
+
+Name: Jaswant Gajula
+Date: 03 July 2026
+
+============================================================
+1. Directory Structure Created
+============================================================
+
+Command:
+mkdir -p SecureProject/{Documents,SourceCode,Backup}
+
+Output:
+SecureProject
+├── Backup
+├── Documents
+└── SourceCode
+
+Observation:
+This command created a project workspace with three subdirectories.
+The folders were created successfully using a single command.
+The workspace is now ready to store project files.
+
+============================================================
+2. File Permissions Before Modification
+============================================================
+
+Command:
+ls -l SecureProject
+
+Output:
+drwxr-xr-x  Backup
+drwxr-xr-x  Documents
+drwxr-xr-x  SourceCode
+
+Observation:
+This command displayed the default permissions of the project folders.
+The owner had full access, while the group and others had read and execute permissions.
+These were the default permissions assigned by the operating system.
+
+============================================================
+3. File Permissions After Modification
+============================================================
+
+Command:
+chmod -R 750 SecureProject
+ls -l SecureProject
+
+Output:
+drwxr-x---  Backup
+drwxr-x---  Documents
+drwxr-x---  SourceCode
+
+Observation:
+The chmod command changed the permissions of all folders.
+The owner has full access, the group has read and execute permissions, and others have no access.
+This makes the project workspace more secure.
+
+============================================================
+4. Ownership Details
+============================================================
+
+Command:
+ls -ld SecureProject
+
+Output:
+Owner : bunny
+Group : staff
+
+Observation:
+This command displays the owner and group of the project directory.
+The owner of the workspace is bunny and the group is staff.
+Ownership helps identify who can manage the project files.
+
+============================================================
+5. Umask Value
+============================================================
+
+Command:
+umask
+
+Output:
+022
+
+Observation:
+The umask command shows the default permission mask for newly created files and folders.
+A value of 022 removes write permission for the group and others.
+This helps maintain safe default permissions.
+
+============================================================
+6. How Permissions Protect Project Data
+============================================================
+
+Observation:
+Linux permissions help protect important project files from unauthorized access.
+Only the owner has full control over the workspace, while group members have limited access.
+Other users cannot access or modify the project because their permissions have been removed.

@@ -1,0 +1,21 @@
+Question 4 - File Access and I/O Investigation
+
+Commands Executed
+
+pwd
+
+touch sample.txt
+
+lsof sample.txt
+
+ls -l /dev/fd
+
+echo "Linux File IO Test" > output.txt
+
+cat output.txt
+
+ls file_that_does_not_exist 2> error.log
+
+cat error.log
+
+ulimit -a
