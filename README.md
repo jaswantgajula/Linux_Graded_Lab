@@ -6,6 +6,7 @@ This repository contains the solutions for the Linux Graded Lab Assignment (Modu
 
 ## Repository Structure
 
+```
 Linux_Graded_Lab/
 │
 ├── Question1/
@@ -13,6 +14,7 @@ Linux_Graded_Lab/
 ├── Question3/
 ├── Question4/
 └── Question5/
+```
 
 ## Contents
 
